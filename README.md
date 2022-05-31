@@ -19,3 +19,5 @@ The workflow steps are:
 * Run Cutadapt on the reads to cut adapters - enter two files with adapter sequence at the workflow option for "Choose file containing 3' adapters". The default settings are on except that the "Maximum error rate" for the adapters is set to 0.2 instead of 0.1. Send output statistics to MulitQC, this is "Report 2" in the Galaxy history. Note that you may have different requirements here in terms of how many adapter sequences you want to enter. We recommend copying the workflow and modifying as needed. 
 * Send these reads to fastp for additional filtering or trimming. Default settings are on but can be modified as needed. Send output statistics to MultiQC, this is "Report 3" in the Galaxy history. 
 * The filtered and trimmed reads are then ready for the stacks workflows. 
+
+![qc-wf](wf-image-qc.png)
